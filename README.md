@@ -36,11 +36,32 @@ The dataset comprises a total of <b>303 patients</b>, with <b>165 diagnosed with
 
 ### Input
 
-The user needs to select from the menu a <b>type of chest pain </b> (four options), specify a <b>value for heart rate</b> (value between 71 and 202), choose <b>the peak slope of the electrocardiogram</b>, and indicate the <b>result of the resting electrocardiographic</b>.
+The user can select from the menu a <b>type of chest pain </b> (four options), specify a <b>value for heart rate</b> (value between 71 and 202), <b>the peak slope of the electrocardiogram</b>, and indicate the <b>result of the resting electrocardiographic</b>.
 
 ### Output
 
+The output will be a table indicading the probability of having heart disease (doencaCardiaca(1)) and not having (doencaCardiaca(0)), such as:
 
+```
+CALCULANDO PROBABILIDADE:
+
+Considerando:
+
+- Dor no peito angina típica.
+
+
+Base de dados, doençaCardiaca = 0: 9
+Base de dados, doençaCardiaca = 1: 41
+Base de dados, Total: 50
++-------------------+-----------------------+
+| doencaCardiaca    |   phi(doencaCardiaca) |
++===================+=======================+
+| doencaCardiaca(0) |                0.1878 |
++-------------------+-----------------------+
+| doencaCardiaca(1) |                0.8122 |
++-------------------+-----------------------+
+
+```
 
 ### Dependency
 
